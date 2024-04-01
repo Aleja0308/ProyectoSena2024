@@ -1,0 +1,108 @@
+REQUERIMIENTOS PROYECTO SENA 2024
+MEDICINA HOLÍSTICA
+
+DESCRIPCIÓN DEL PROYECTO
+Se desarrolla un software médico que permita: 
+
+Llevar un control de los pacientes teniendo en cuenta que para el paciente:
+
+INFORMACIÓN BÁSICA:
+*Tipo y número de documento.
+*Fecha de expedición.
+*Nombres.
+*Apellidos.
+*Fecha de nacimiento.
+*Lugar de nacimiento.
+*Género.
+*Edad.
+*Tipo de sangre.
+*Estatura.
+*Peso.
+*Ocupación.
+*Teléfono.
+*Correo electrónico.
+*Dirección de residencia.
+*Hijos: sí o no, ¿cuántos? (observación). 
+
+INFORMACIÓN MÉDICA:
+*Historial médico (observación).
+*Sintomatología actual (observación).
+*Medicamentos actuales (observación).
+*Exámenes de laboratorio (observación).
+*Exámenes de imagenología (observación).
+*Antecedentes familiares (observación).
+*Antecedentes personales (observación).
+*Tensión arterial (observación). 
+*Glucemia (observación).
+*Sat O2 (observación).
+
+Con base a esta información que permita la gestión de pacientes: ingreso, listado, edición, actualización y eliminación.
+Visualizar y descargar su historial clínico en formato PDF.
+El cargue y descarga de archivos de cualquier formato.
+Agendamiento, modificación o cancelación de citas.
+Finalmente, el programa tendrá dos roles, uno de administrador y otro de auxiliar o asistente, ambos tendrán permisos específicos y deberán ingresar por medio de un usuario y una contraseña asignado a cada uno.
+
+REQUERIMIENTOS FUNCIONES:
+1.	Gestión de pacientes: 
+  o	Registro de pacientes:
+    	Información básica: Tipo y número de documento, fecha de expedición, nombres, apellidos, fecha de nacimiento, lugar de nacimiento, género, edad, tipo de sangre, estatura, peso, ocupación, teléfono, correo electrónico, dirección de residencia, hijos: sí o no, ¿cuántos? (observación), 
+    	Información médica: Historial médico, sintomatología actual, medicamentos actuales, exámenes de laboratorio, exámenes de imagenología, antecedentes familiares, antecedentes personales, tensión arterial, glucemia, Sat O2.
+    o	Listar pacientes:
+    	Todos los pacientes registrados por orden alfabético.
+    	Filtrar la búsqueda de pacientes por diferentes criterios (número de documento, nombres, apellidos).
+  o	Editar pacientes: 
+    	Su información básica y su información médica.
+  o	Eliminar pacientes:
+    	Mensaje de advertencia previo a la eliminación.
+  o	Actualizar pacientes: 
+  	Su información básica y su información médica.
+
+2.	Historial médico:
+  o	Visualizar historial médico de un paciente.
+  o	Descargar historial médico en formato PDF.
+
+3.	Carga y descarga de archivos:
+  o	Carga de archivos de cualquier formato al sistema.
+  o	Descarga de archivos de cualquier formato del sistema.
+
+4.	Agendamiento de citas:
+  o	Registro de citas:
+    	Fecha, hora, motivo de la cita, paciente, etc.
+    	Notificación al paciente y al médico.
+  o	Listar citas:
+    	Todas las citas agendadas.
+    	Filtrado por diferentes criterios (fecha, hora, paciente, etc.).
+    	Ordenación por diferentes criterios (fecha, hora, paciente, etc.).
+  o	Editar citas:
+    	Fecha, hora, motivo de la cita, paciente, etc.
+  o	Eliminar citas:
+    	Advertencia previa a la eliminación.
+  o	Actualizar citas:
+    	Fecha, hora, motivo de la cita, paciente, etc.
+
+5.	Roles de usuario:
+  o	Súper usuario (Aprendiz Betsy Alejandra Castellanos Duarte):
+    	Acceso a todas las funcionalidades del sistema.
+    	Creación, edición y eliminación de usuarios.
+
+  o	Administrador (Doc. Herwing Alonsos Ordóñez Riberos):
+    	Registro, listado, edición y eliminación de pacientes.
+    	Visualización y descarga del historial médico de los pacientes.
+    	Carga y descarga de archivos al sistema.
+    	Agendamiento, modificación y cancelación de citas.
+    	Ingreso al sistema mediante usuario y contraseña.
+
+  o	Auxiliar (Adriana Rodríguez Lancheros):
+    	Visualización y listado del historial médico de los pacientes.
+    	Visualización de archivos del sistema.
+    	Agendamiento, modificación y cancelación de citas.
+    	Ingreso al sistema mediante usuario y contraseña.
+
+
+REQUERIMIENTOS NO FUNCIONALES:
+1.	Usabilidad: Facilidad de uso e interfaz gráfica intuitiva.
+2.	Seguridad: Protección de la información confidencial de los pacientes.
+3.	Rendimiento: Rapidez y eficiencia para el manejo de un gran número de usuarios y pacientes.
+4.	Disponibilidad: Acceso 24/7.
+5.	Mantenimiento: Facilidad de mantenimiento y actualización.
+6.	Pruebas de calidad: Pruebas de calidad antes de la implementación.
