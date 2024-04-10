@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,25 +6,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Medicina Holística</title>
-  <link rel="icon" href="/assets/images/icono.png" type="image/x-icon">
-  <link rel="stylesheet" href="main_ingreso.css">
+  <link rel="icon" href="{% static "images/icono.png" %}" type="image/x-icon">
+  <link rel="stylesheet" href="{% static "main.css" %}">
 </head>
 
 <body>
 
-  <style>
-    body {
-      background-image: url(/assets/images/fondo.jpeg);
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-  </style>
-
   <header>
 
-    <div class="logo">
+    <div class="header_logo">
       <a href="ingreso.html">
-        <img src="/assets/images/logo.png" class="logo__img" alt="logo">
+        <img src="{% static "images/logo.png" %}" class="logo" alt="logo">
       </a>
     </div>
 
@@ -32,29 +25,22 @@
   <section class="login">
 
     <div class="card__login">
-      <form action="templates/ingreso.html"></form>
+      <form action= "{% url "ingreso" %}">
 
       <div class="contenedor_ingreso">
         <div>
-          <label class="form__control">Usuario:</label>
-          <input class="form_input" type="text" id="Usuiario" name="Usuario" placeholder="Usuario" required
+          <label class="form__control"></label>
+          <input class="form__input" type="text" id="Usuiario" name="Usuario" placeholder="Usuario" required
             pattern="[A-Za-z]+">
         </div>
 
         <div>
-          <label class="form_control">Contraseña</label>
-          <input class="form_input" type="password" id="Contraseña" name="Contraseña" placeholder="**********" required
-            minlength="10">
+          <label class="form__control"></label>
+          <input class="form__input" type="password" id="Contraseña" name="Contraseña" placeholder="Contraseña" required minlength="10">
         </div>
 
         <div>
-          <label class="form_control">Recordar datos:
-            <input class="form_input" type="checkbox" id="datos" name="datos">
-          </label>
-        </div>
-
-        <div>
-          <button class="form_button" type="submit" class="card__button">Iniciar sesión</button>
+          <button class="form__button" type="submit">Iniciar sesión</button>
         </div>
       </div>
 
